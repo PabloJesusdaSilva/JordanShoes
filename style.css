@@ -1,0 +1,188 @@
+
+:root {
+    --color-text-one: #F9F9F9;
+    --color-text-two: #181818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--color-text-one);
+}
+
+/*---------- HEADER ----------*/
+
+.header-pmt {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    padding: 18px;
+    background: var(--color-text-two);
+    font-size: 16px;
+    color: var(--color-text-one);
+
+}
+
+.header-name {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 60px;
+    width: 100%;
+    height: 60px;
+    padding: 18px;
+    background: var(--color-text-one);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-two);
+}
+
+/*---------- BANNER ----------*/
+
+.banner-img {
+    position: absolute;
+    top: 119px;
+    left: 0;
+    width: 100%;
+    height: 378px;
+    object-fit: cover;
+    background: var(--color-text-two);
+    filter: brightness(60%);
+    opacity: 0.6;
+}
+
+.title-img {
+    position: absolute;
+    top: 248px;
+    left: 100px;
+    font-weight: 700;
+    color: var(--color-text-one);
+}
+
+.descripition {
+    position: absolute;
+    top: 306px;
+    left: 100px;
+    color: var(--color-text-one);
+}
+
+/*---------- PRODCUTS ---------*/
+
+
+.destaques {
+    position: absolute;
+    top: 555px;
+    left: 620px;
+    font-weight: 600;
+    color: #474747;
+}
+
+.brindes {
+    position: absolute;
+    top: 618px;
+    left: 420px;
+}
+
+.cards {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 712px;
+}
+
+.card-product {
+    background: #EBE9EA;
+    width: 280px;
+    height: 180px;
+    margin: 6px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgb(204, 199, 199);
+    transition: 500ms;
+}
+
+.card-product:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgb(161, 161, 161);
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 35px;
+    /*top: 1140px;*/
+    bottom: 0;
+    background: var(--color-text-two);
+    color: var(--color-text-one);
+    font-size: 14px;
+}
+
+/*---------- RESPONSIVE ---------*/
+
+@media (max-width: 900px) {
+    body {
+        max-width: 900px;
+    }
+
+    .header-pmt {
+        width: 100%;
+    }
+
+    .header-name {
+        width: 100%;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .title-img {
+        position: absolute;
+        top: 220px;
+        left: 50px;
+    }
+
+    .descripition {
+        position: absolute;
+        top: 306px;
+        left: 50px
+    }
+
+    .destaques {
+        left: 130px;
+    }
+
+    .brindes {
+        width: 300px;
+        left: 60px;
+    }
+
+    .cards {
+        max-width: 900px;
+        margin-bottom: 50px;
+    }
+
+    .card-product:last-child {
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
