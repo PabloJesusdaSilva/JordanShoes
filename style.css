@@ -124,6 +124,7 @@ body {
     position: fixed;
     width: 100%;
     height: 35px;
+    margin-top: 10px;
     /*top: 1140px;*/
     bottom: 0;
     background: var(--color-text-two);
