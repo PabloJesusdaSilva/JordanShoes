@@ -76,7 +76,60 @@ body {
 /*---------- PRODCUTS ---------*/
 
 
+.emphasis-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
 
+.emphasis-text .emphasis {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    font-size: 30px;
+}
+
+.emphasis-text .information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+
+/*---------- CARDS ---------*/
+
+
+.cards {
+    width: 1380px;
+    height: auto;
+    margin-left: 15%;
+    margin-bottom: 60px;
+}
+
+.cards img {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+}
+
+
+/*---------- FOOTER ---------*/
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+}
 
 /*---------- RESPONSIVE ---------*/
+
 
