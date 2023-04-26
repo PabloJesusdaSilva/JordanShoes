@@ -114,8 +114,12 @@ body {
     width: 300px;
     height: auto;
     margin: 20px;
+    transition: all 500ms;
 }
 
+.cards img:hover {
+    scale: 1.1;
+}
 
 /*---------- FOOTER ---------*/
 
